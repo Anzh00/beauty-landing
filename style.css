@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    /* background-color: #EFEFEF; */
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.header__navigation {
+    background-color: #EFEFEF;
+}
+
+.header__navigation ul {
+    display: flex;
+    justify-content: center;
+    padding: 17px 0 16px 0;
+}
+
+.header__navigation li {
+    padding: 0 15px 0 15px;
+}
+
+.header__navigation a {
+    color: #333333;
+}
+
+.header__info {
+    padding: 20px 0;
+}
+
+.header__info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    background-color: #ffffff;
+    box-shadow: -20vw 0px #ffffff,
+                 20vw 0px #ffffff;
+}
+
+.logo {
+    /* margin-left: 21%; */
+    position: relative;
+}
+
+.ico {
+    display: inline-block;
+}
+
+.ico-logo {
+    background-image: url("assets/icons/logo.svg");
+    width: 80px;
+    height: 80px;
+}
+
+.logo__text {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #66C05D;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.phone-number {
+    display: inline-block;
+}
+
+.phone-number p {
+    margin: 0 40px 0 0;
+}
+
+.phone-number p, button {
+    display: inline-block;
+    margin-top: 23px;
+}
+
+.number {
+    font-size: 16px;
+}
+
+.button {
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid;
+}
+
+.button_bordered_white {
+    border-color: #66C05D;
+    background-color: #ffffff;
+}
+
+.button_bordered_green {
+    border-color: #ffffff;
+    background-color: #66C05D;
+    color: #ffffff;
+}
+
+.button_colored {
+    color: #ffffff;
+    background-color: #66C05D;
+    width: 133px;
+    height: 38px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+
+.menu {
+    border-top: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.menu li {
+    padding: 0 20px 0 20px;
+}
+
+.menu a {
+    font-size: 16px;
+}
+
+.promo {
+    height: 604px;
+}
+
+.promo__wrapper {
+    background-color: #66C05D;
+    box-shadow: -20vw 0px #66C05D,
+                 20vw 0px #66C05D;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+}
+
+.promo__content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.promo__content {
+    color: #EFEFEF;
+    line-height: 20px;
+}
+
+.promo__content p {
+    padding: 15px 0 10px 0;
+}
+
+.promo__content 
+.button_bordered_green {
+    letter-spacing: 0.05em;
+}
+
+.promo__img {
+    margin-left: 130px;
+    z-index: 3;
+}
+
+.promo__chair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.promo__chair-rounds { 
+    position: absolute;
+    width: 859px;
+    height: 604px;
+    background-image: url("./assets/images/rounds.svg");
+    background-repeat: no-repeat; 
+    background-size: contain;  
+}
+
+.promo__chair-img {
+    z-index: 1;
+}
+
+.catalog {
+    padding-top: 70px;
+    background-color: #EFEFEF;
+}
+
+.catalog__heading {
+    display: block;
+    height: 100px;
+}
+
+.ico-car {
+    background-image: url("assets/icons/car.svg");
+    width: 188px;
+    height: 60px;
+    float: right;    
+    margin-right: 4%;
+    margin-top: 20px;
+    display: block;
+}
+
+.catalog__heading h3 {
+    font-size: 24px;
+    float: left;
+    margin-top: 30px;
+}
+
+.catalog__gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.catalog__item {
+    background-color: #ffffff;
+    max-width: 255px;
+    /* width: 25%; */
+    height: 363px;
+    padding: 25px 30px;
+}
+
+.item__img {
+    margin: 0 34px 0 34px;
+}
+
+.item__name {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.item__cost {
+    font-weight: 500;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+.catalog__item button {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.bonus {
+    /* display: inline-block; */
+    height: 460px;
+    padding-top: 100px;
+    background-color: #EFEFEF;
+}
+
+.bonus__container {
+    display: flex;
+}
+
+.bonus__subscribe, .bonus__shops {
+    display: inline-block;
+    background-color: #66C05D;
+    max-width: 540px;
+    width: 50%;
+    height: 212px;
+    color: #ffffff;
+}
+
+.bonus__subscribe {
+    float: left;
+    display: flex;
+    margin-right: 30px;
+    padding-left: 40px;
+}
+
+.bonus__shops {
+    float: right;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+.ico_envelope {
+    background-image: url("assets/icons/envelope.svg");
+    width: 140px;
+    height: 126px;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+.subscribe-form {
+    border-radius: 30px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin-top: 15px;
+}
+
+.subscribe-form::placeholder {
+    color: #C4C4C4;
+    padding-left: 20px;
+}
+
+.bonus__subscribe-text {
+    margin-right: 65px;
+}
+
+.bonus__subscribe-text h4 {
+    margin-top: 35px;
+}
+
+.bonus__shops button {
+    margin-top: 13px;
+    height: 36px;
+}
+
+.footer {
+    background-color: #EFEFEF;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    box-shadow: -20vw 0px #ffffff,
+                 20vw 0px #ffffff;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials .ico {
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;  
+}
+
+.socials .ico:first-child {
+    margin-left: 0;
+}
+
+.ico_youtube {
+    background-image: url("assets/icons/youtube.svg");
+}
+
+.ico_vk {
+    background-image: url("assets/icons/vk.svg");
+}
+
+.ico_facebook {
+    background-image: url("assets/icons/facebook-logo.svg");
+}
+
+.ico_instagram {
+    background-image: url("assets/icons/instagram.svg");
+}
+
+.footer__menu .number {
+    margin-top: 0;
+}
+
+.footer__menu .button {
+    margin-top: 4px;
+}
+
+.address {
+    display: inline-block;
+    width: 400px;
+    padding: 0 80px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
+
+.policy__confidentiality {
+    color: #828282;
+}
+
+@media only screen and (max-width: 1035px) {
+    .bonus__subscribe, .bonus__shops {
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .bonus__subscribe .ico_envelope {
+        display: none;
+    }
+
+    .promo__content {
+        padding-left: 20px;
+    }
+    
+    .promo__chair-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .catalog__gallery {
+        justify-content: space-around;
+    }
+
+    .catalog__item {
+        margin-bottom: 40px;
+    }
+
+    .socials, .address {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu li {
+        margin-bottom: 20px;
+    }
+
+    .promo__chair-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .promo__chair-rounds {
+        background-position: 200px;
+    }
+}
+
+@media only screen and (max-width: 624px) {
+    .catalog__heading {
+        justify-content: center;
+        display: flex;
+    }
+
+    .ico-car {
+        display: none;
+    }
+
+    .bonus__subscribe, .bonus__shops {
+        height: 300px;
+        padding: 0 20px;
+    }
+
+    .bonus__subscribe-text {
+        margin-right: 0;
+    }
+
+    .promo__chair-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .phone-number {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .phone-number p {
+        margin: 0;
+    }
+}
